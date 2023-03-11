@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMIBharo</title>
+  <link rel="stylesheet" href="CSS/index.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+  <header class="header">
+    <a href="" class="logo">EMIBharo</a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#personal-loan" class="active">Personal loan</a>
+      <a href="#about">About</a>
+      <a href="#service">Service</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#partner">Become a partner</a>
+    </nav>
+  </header>
+
+  <!-- home section design -->
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h4>Get a personal loan with us.</h4>
+      <h1>Spend Now,</h1>
+      <h3>Pay later.</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem animi ipsum, minus sit reiciendis sapiente, quisquam mollitia cumque obcaecati impedit natus.</p>
+      <div class="download-btn">
+        <a href="#" class="btn"><i class='bx bxl-play-store'></i> Download</a>
+        <a href="#" class="btn"><i class='bx bxl-apple'></i> Download</a>
+      </div>
+    </div>
+
+    <div class="top">
+      <div class="perspective">
+        <div class="card">
+          <div class="thumb">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script type="text/javascript" src="JS/vanilla-tilt.js"></script>
+  <script src="JS/index.js"></script>
+
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".card"), {
+      max: 25,
+      speed: 300
+    });
+    
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".card"));
+  </script>
+
+</body>
+</html>
