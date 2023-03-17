@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/contact.css" />
+</head>
+
+<body>
+
+  <header class="" id="header">
+    <a href="index.html" class="logo" id="#logo">EMIBharo</a>
+
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#personal-loan">Personal loan</a>
+      <a href="#about">About</a>
+      <a href="#service">Service</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#partner">Become a partner</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Have an inquiry or some feedback for us?</br>
+            Fill out the form below to contact our team.
+          </p>
+
+          <div class="info">
+            <div class="information">
+
+              <i class="fa-solid fa-location-dot icon"></i>
+              <p>Address</p>
+            </div>
+            <div class="information">
+              <i class="fa-solid fa-envelope icon"></i>
+              <p>email</p>
+            </div>
+            <div class="information">
+              <i class="fa-solid fa-phone icon"></i>
+              <p>Number</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form action="" autocomplete="off">
+            <h3 class="title">Contact Us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="name input" id="Name" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="email input" id="Email" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="phone-no input" id="Phone-No" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="message input " id="Message"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="send-btn btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("ySC2lplysoW84Rn2R");
+    })();
+  </script>
+  <script src="js/index.js"></script>
+  <script src="JS/contact.js"></script>
+</body>
+
+</html>
