@@ -9,13 +9,12 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  /* font-family: 'Manrope', sans-serif; */
   font-family: 'Poppins', sans-serif;
 }
 
-html {
+/* html {
   overflow-x: hidden;
-}
+} */
 
 body {
   background: var(--white-color);
@@ -30,6 +29,10 @@ body {
   --blue-color: #0000ff;
   --darkblue-color:#00008b;
   --light-blue-color:#e6e4ff;
+  --box-shadow: 0px 0px 50px 0px rgb(0 0 0/10%);
+
+  --bg-gradient-indigo: linear-gradient(to right,#6d57ff,#131eb8);
+  --bg-gradient-amin: linear-gradient(to right,#8E2DE2,#4A00E0);
 }
 
 /*--------- Reusable headings start --------*/
@@ -119,6 +122,20 @@ body {
 .dwn-btn:hover {
   background-color: transparent;
   color: var(--bg-color);
+}
+
+.btn-primary{
+  padding: 0.5rem 0.8rem;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.btn-shadow{
+  box-shadow: var(--box-shadow);
+}
+
+.btn-primary:hover{
+  background:var(--bg-gradient-indigo);
 }
 
 /*--------- Buttons End -------------*/
@@ -263,7 +280,7 @@ header.shadow .logo {
 
 .card {
   width: 280px;
-  height: 540px;
+  height: 538px;
   margin: auto;
   border-radius: 40px;
   box-shadow: 0 70px 63px -60px #494848;
@@ -409,12 +426,13 @@ img {
 
 /*=============== process - steps section ======*/
 
-.process{
-  background-color: var(--light-blue-color);
-}
+/* .process{
+} */
 .process-container{
   display: grid;
+  background-color: var(--light-blue-color);
   grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
 }
 .process-content{
   padding: 2rem 0rem 2rem 4rem;
@@ -723,6 +741,7 @@ img {
 .swiper-pagination-bullet-active {
   background-color: #0e005e;
 }
+
 @media screen and (max-width: 768px) {
   .slide p {
     font-size: 0.9rem;
@@ -734,6 +753,59 @@ img {
 }
 
 /*=========Testimonial section end==========*/
+
+/*------- counting section -----------*/
+
+
+.counter-section{
+  background-color: var(--light-blue-color);
+}
+
+.counters-container{
+  margin: 0rem 0rem -6rem;
+  padding: 1.5rem;
+  background:var(--bg-gradient-amin);
+  color: var(--white-color);
+  text-align: center;
+  border-radius: 40px;
+  position: relative;
+}
+
+.counters-container .counter-div{
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 2em;
+}
+
+.counter{
+  position: relative;
+}
+
+.counter h2{
+  font-size: 2.5rem;
+}
+
+.counter h2 span{
+  margin: 0.5rem;
+}
+
+
+@media (max-width:700px) {
+  .counter h2{
+    font-size: 1.8rem;
+  }
+
+  .counter h4{
+    font-size: 0.9rem;
+  }
+
+  .counters-container .counter-div{
+    grid-template-columns: repeat(2 ,1fr);
+  }
+}
+
 
 
 /*========= footer section =============*/
@@ -872,6 +944,9 @@ img {
   padding: 4px;
    width: 100px;
 }
+
+
+
 
 
 /*========= footer section end =============*/
