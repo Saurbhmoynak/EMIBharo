@@ -7,14 +7,7 @@ menuIcon.onclick = () => {
 }
 
 
-let header = document.querySelector("header");
-let nav = document.querySelector("nav");
-window.addEventListener("scroll", () => {
-  header.classList.toggle("shadow", window.scrollY > 0)
-  nav.classList.toggle("text-color", window.scrollY > 0)
-  menuIcon.classList.remove('bx-x');
-  navbar.classList.remove('active');
-})
+
 
 
 VanillaTilt.init(document.querySelector(".card"), {
